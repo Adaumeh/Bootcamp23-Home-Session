@@ -1,6 +1,6 @@
 
 module.exports = {
-getPrime:function(n){
+getPrimes:function(n){
 var ar = [],
     limit = 10,
     n, divisor;
