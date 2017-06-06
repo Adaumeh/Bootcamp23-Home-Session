@@ -1,5 +1,4 @@
 
-
 var myApp = require('../app/getPrime.js');
 
 
