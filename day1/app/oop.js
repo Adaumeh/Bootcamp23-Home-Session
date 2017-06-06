@@ -1,21 +1,21 @@
-module.exports = {
+
 var food = function(name,form,storage,group,cook){
   this.name =   name;
   this.form =    form;
   this.storage = storage;
-  this. group =  group;
+  this.group =  group;
   this.cook =   cook;
 };
 
 
-var cook = function(){
-  console.log("Hello, I am"  + this.name +  "cooked by" + this.cook);
+food.prototype.prepare = function(){
+  console.log("Hello, I am  cooked by" +" "+ this.cook);
 };
-var eat = function(){
-  console.log("You eat me as"+ this.solid);
+food.prototype.eat = function(){
+  console.log("You eat me as" +" "+ this.form);
 };
-var storage = function(){
-    console.log("You store me in the" + this. storage);
+food.prototype.preserve = function(){
+    console.log("You store me in the" + " "+ this.storage);
 };
 
 var food1 = new food("cake","solid","refrigerate","Carboydrates","baking");
@@ -27,4 +27,9 @@ food1.cook;
 food2.storage;
 food3.form;
 food2.group;
-};
+food4.group;
+food3.eat();
+food2.eat();
+food4.preserve();
+food2.prepare();
+food1.prepare();
