@@ -1,46 +1,45 @@
-module.exports ={
-   words:function(string) {
-  var re = /\w+\s/g;
-  var str =  string;
-  var myArray = str.match(re);
-  var mycount  = 0;
-  var new_array = [];
+const words = (string) => {
+    const a = splitString(string);
 
-    for (var i = 0; i <= myArray.length; i++){
-      y = myArray.Count(myArray[i]);
-      
-      if(y > 0){
-        mycount += y;
-        return mycount;
+    const b = [...new Set(a)];
+
+    const c = {};
+
+    for (let i = 0; i < b.length; i++) {
+      const word = b[i];
+      let count = 0;
+      for (let j = 0; j < a.length; j++) {
+        if (a[j] === word) {
+          count++;
+        }
       }
-      x = myArray.pop(myArray[i]);
-      new_array.push(x);
-    }return {new_array:mycount};
-      
-    
+      c[word] = count;
     }
-};
 
+    return c;
+}
 
+const splitString = (string) => {
+    const array = [];
+    let substring = '';
 
-	 
-   
-    
+    for (let i = 0; i < string.length; i++) {
+      const char = string[i];
+      if (/\s/.test(char)) {
+        if (substring) {
+          array.push(substring);
+        }
+        substring = '';
+      } else {
+        substring += char;
+      }
+    }
 
+    if (substring) {
+      array.push(substring);
+    }
 
+    return array;
+}
 
-
-
-
-    
-
-
-  
-
-
-
-
-
-
-
-	
+module.exports = words;

@@ -1,5 +1,5 @@
   
-var Car = require('../app/wordsearch.js');
+var words = require('../app/wordsearch.js');
  describe("words()", function() {
   it("counts one word", function() {
     var expectedCounts = { word: 1 };
