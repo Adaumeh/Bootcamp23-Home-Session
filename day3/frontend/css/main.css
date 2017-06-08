@@ -1,0 +1,102 @@
+body{
+	background-color: white;
+
+}
+#lab{
+	margin-left: 500px;
+	 color: yellow; 
+	 text-align:center;
+}
+#photos{
+	text-align: center;
+	color: black;
+	height: 40px;
+	margin-top: 80px;
+	font-size: 24px;
+	margin-bottom:60px; 
+	font-family: 'Yantramanav', sans-serif;
+}
+
+
+
+.image{
+	background: white;
+	float: center;
+	margin-left: 10px;
+	margin-top: 20px;
+	padding: 20px;
+	height: 200px;
+	width: 100%;
+}
+.text2{
+	 color: black; 
+	 font-size: 20px
+	 text-align:justify;
+	 font-family: 'Yantramanav', sans-serif;
+	 margin-top: 300px;
+	 margin-left: 150px;
+	
+
+	 }
+	 .clear{
+
+	 }
+.nav{
+	margin-top: 0px;
+	background: black;
+	width: 100%;]
+	height: 20px;
+	float:left;
+	color:white;
+	margin-left:none; 
+}
+.clear{
+
+}
+.texts{
+	color:black;
+	font-family:courier; 
+	background: white;
+	float: left;
+	width: 40%;
+	height: 100px;
+	margin: 50px;
+	line-height: 40px;
+	}
+	.clear{
+
+	}
+	.img123{
+		height: 70px;
+		width: 50px;
+		float: left;
+		 margin-right:5px;
+		}
+.clear{
+
+}
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+li {
+	margin-left:50px;
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #000000;
+    float: left;
+    color: white;
+}
+#btext{
+	margin-left: 10px;
+	float: right; 
+	list-style-type: 
+}
