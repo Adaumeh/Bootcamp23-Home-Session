@@ -1,18 +1,19 @@
 class StringSplosion{
-  constructor(string)
+
+   constructor(Str)
   {
-    this.string = string;
+    this.Str = Str;
   }
 
  manipulate(){
-    let str_exploded = "";
+    let str_exploded = " ";
     let sss = ""
     
-   let strExplode = (this.string).split("");
+   let strExplode = (this.Str).split("");
     for(let i=0; i<strExplode.length; i++){
         
      for(let j=0; j<=i; j++){
-        str_exploded+=this.string[j];
+        str_exploded+=this.Str[j];
       }
       
    }
@@ -20,7 +21,6 @@ class StringSplosion{
   }
 }
   
-let result = new StringSplosion('ade');
-console.log(result.manipulate());
+let stringSplosion = new StringSplosion('Str');
 
-
+module.exports = StringSplosion;
