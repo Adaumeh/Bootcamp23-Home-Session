@@ -1,6 +1,6 @@
 
   
-var stringSplosion = require('../app/stringsplossion.js');
+var StringSplosion = require('../app/stringsplossion.js');
 describe(" String splosion", function(){
 
     it("should manipulate the string", function(){
